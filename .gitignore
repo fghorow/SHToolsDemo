@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Uncompressed Spherical Harmonic coefficients
+*.shm
+
 # C extensions
 *.so
 
