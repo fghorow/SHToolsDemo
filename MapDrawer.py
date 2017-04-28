@@ -4,6 +4,10 @@
 import sys
 sys.path.append('/usr/local/lib/python2.7/site-packages')
 from matplotlib import pyplot as plt
+# A showstopper bug where the areal clipping region was incorrect was fixed in basemap about a year ago.
+# However, the bugfix does not seem to have propagated very far in distro-land.
+# You might need to install basecamp with pip pointing to basecamp's git head to work around this...
+# Hopefully, the need for such a workaround will eventually die away.
 from mpl_toolkits.basemap import Basemap, shiftgrid, addcyclic
 #import cartopy.crs as ccrs
 ##from cartopy.util import add_cyclic_point
